@@ -1,0 +1,249 @@
+.contenedor-principal {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-section {
+    width: 100%;
+    height: 100vh;
+    border-radius: 8px;
+    display: flex;
+    gap: 5%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-section:nth-child(1) {
+    background: url(../images/service/gae-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-section:nth-child(2) {
+    background: url(../images/service/gop-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-content {
+    position: relative;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.85);
+}
+
+
+.service-title {
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 8px #141414;
+    user-select: none;
+}
+
+.service-title u {
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.service-copy {
+    margin-top: 25px;
+    color: #fff;
+    text-align: justify;
+    padding: 5px 15px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: 4px 4px 15px #000;
+    line-height: 1.5;
+    font-weight: 400;
+    text-shadow: 4px 4px 6px #141414;
+}
+
+.service-cta {
+    margin-top: 30px;
+    outline: none;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 5px 5px 8px #141414;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.85);
+}
+
+.service-cta:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 4px 4px, rgba(0, 0, 0, 0.65) 8px 8px, rgba(0, 0, 0, 0.35) 12px 12px;
+}
+
+.incluye-content {
+    width: 30%;
+    height: 80%;
+    padding: 20px;
+    background: #000;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.incluye-title {
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.incluye-title svg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+
+.lista-beneficios {
+    list-style: none;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.beneficio {
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.beneficio svg {
+    color: #3AEA1F;
+}
+
+
+/* ===========  RESPONSIVE DESIGN  1024PX =================*/
+
+@media (max-width: 1024px) {
+    .contenedor-principal {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-section {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .service-title {
+        font-size: 40px;
+    }
+
+    .service-copy {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .incluye-content {
+        width: 30%;
+        height: 80%;
+        padding: 20px;
+        background: #000;
+        border-radius: 15px;
+        color: #fff;
+    }
+
+    .incluye-title {
+        font-size: 25px;
+    }
+}
+
+
+/*========================================== RESPONSIVE DESIGN 768px =================================*/
+
+@media (max-width: 768px) {
+    .service-section {
+        width: 100%;
+        height: 100vh;
+        gap: 3%;
+        flex-direction: column;
+    }
+
+    .service-content {
+        position: relative;
+        width: 90%;
+        height: 60%;
+    }
+
+
+    .service-title {
+        font-size: 30px;
+    }
+
+    .service-copy {
+        padding: 8px 16px;
+        line-height: 1.1;
+        font-size: 12px;
+    }
+
+    .service-cta {
+        margin-top: 50px;
+    }
+
+    .incluye-content {
+        width: 90%;
+        height: 35%;
+    }
+
+    .incluye-title {
+        font-size: 20px;
+    }
+
+    .incluye-title svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .lista-beneficios {
+        gap: 15px;
+    }
+
+    .beneficio {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.65);
+    }
+
+}

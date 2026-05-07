@@ -1,0 +1,408 @@
+.contenedor-principal {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caratula-section {
+    width: 100%;
+    height: 50vh;
+    background: url(../images/about-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.caratula-content {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.title-section {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    text-shadow: 4px 4px 15px #141414;
+    -webkit-text-stroke: 2px transparent;
+}
+
+.title-section:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.hook {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 4px 4px 15px #141414;
+    font-weight: 400;
+}
+
+.seguros-section {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.seguros-section:nth-child(2),
+.seguros-section:nth-child(4),
+.seguros-section:nth-child(6),
+.seguros-section:nth-child(8) {
+    flex-direction: row-reverse;
+}
+
+.seguro-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 1;
+    background: #000;
+}
+
+.seguro-text {
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.35);
+}
+
+.seguro-text .title {
+    font-size: 35px;
+    text-shadow: 8px 8px 15px rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+.info-text {
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.send-mensaje {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #000;
+    color: #3AEA1F;
+    outline: none;
+    border: 1px solid #3AEA1F;
+    border-radius: 8px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.send-mensaje:hover {
+    border-bottom: 3px solid transparent;
+    box-shadow: #3AEA1F 5px 5px, rgba(58, 234, 31, 0.60) 10px 10px, rgba(58, 234, 31, 0.30) 15px 15px;
+
+}
+
+.imagen-seg {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-seg img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: ease-in 0.3s;
+    cursor: pointer;
+}
+
+.imagen-seg img:hover {
+    filter: none;
+}
+
+.outro-section {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.outro-title {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    word-spacing: -10px;
+    line-height: 1.2;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    user-select: none;
+}
+
+.outro-title u {
+    text-decoration: none;
+    color: #3AEA1F;
+    text-shadow: none;
+}
+
+.copy-plus {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.outro-copy {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.outro-copy u {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+
+.outro-cta {
+    margin-top: 40px;
+    width: 250px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.outro-cta:hover {
+    background: #000;
+    color: #fff;
+    box-shadow: #000 5px 5px, rgba(0, 0, 0, 0.65) 10px 10px, rgba(0, 0, 0, 0.30) 15px 15px;
+}
+
+
+/* ===========  RESPONSIVE DESIGN  1024PX =================*/
+
+@media (max-width: 1024px) {
+    .contenedor-principal {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caratula-section {
+        height: 25vh;
+    }
+
+    .title-section {
+        font-size: 50px;
+    }
+
+    .seguros-section {
+        height: 50vh;
+    }
+
+    .seguro-text .title {
+        font-size: 30px;
+    }
+
+    .outro-section {
+        height: 25vh;
+        ;
+    }
+
+    .outro-title {
+        font-size: 45px;
+        word-spacing: -5px;
+    }
+}
+
+
+/*========================================== RESPONSIVE DESIGN 768px =================================*/
+
+@media (max-width: 768px) {
+    .caratula-section {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .caratula-content {
+        width: 95%;
+        height: 95%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(2px);
+    }
+
+    .title-section {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .hook {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .seguros-section {
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .seguros-section:nth-child(2),
+    .seguros-section:nth-child(4),
+    .seguros-section:nth-child(6),
+    .seguros-section:nth-child(8) {
+        flex-direction: column;
+        background: #fff;
+    }
+
+    .seguro-left {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        z-index: 1;
+        background: transparent;
+    }
+
+    .seguro-text {
+        background: #000;
+        width: 90%;
+        height: 90%;
+        padding: 20px;
+        gap: 20px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.65);
+    }
+
+    .seguro-text .title {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .info-text {
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .send-mensaje {
+        font-size: 14px;
+        align-self: center;
+    }
+
+    .imagen-seg {
+        width: 100%;
+        height: 50%;
+    }
+
+    .imagen-seg img {
+        width: 90%;
+        height: 80%;
+        object-position: top;
+    }
+
+    .outro-section {
+        width: 100%;
+        height: 50vh;
+        flex-direction: column;
+    }
+
+    .outro-title {
+        width: 100%;
+        height: 30%;
+        padding: 20px;
+        word-spacing: 0;
+        line-height: 1.5;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        user-select: none;
+    }
+
+    .outro-title u {
+        font-size: 25px;
+    }
+
+    .copy-plus {
+        width: 100%;
+        height: 70%;
+        padding: 20px;
+    }
+
+    .outro-copy u {
+        padding: 4px 8px;
+    }
+
+    .outro-cta {
+        margin-top: 40px;
+        width: 230px;
+        height: 35px;
+        align-self: center;
+    }
+
+}
