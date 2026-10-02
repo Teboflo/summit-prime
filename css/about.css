@@ -1,0 +1,470 @@
+.contenedor-principal {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caratula-section {
+    width: 100%;
+    height: 50vh;
+    background: url(../images/about-bg.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caratula-section .title-about {
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-text-stroke: 2px transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.caratula-section .title-about:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.about-section {
+    width: 100%;
+    height: 75vh;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-about-text {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.etiqueta {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.etiqueta svg {
+    color: #3AEA1F;
+}
+
+.main-about-text .title {
+    width: 40%;
+    color: #000;
+}
+
+.main-about-text .title u {
+    text-decoration: none;
+    color: #3AEA1F;
+}
+
+.main-about-text .direccion-content {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    gap: 5%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.myv {
+    width: 45%;
+    height: 100%;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.myv u {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    font-weight: 600;
+}
+
+.valores-content {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.valor {
+    width: 30%;
+    height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.valor:hover {
+    transform: scale(1.1);
+}
+
+.svg-content {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
+}
+
+.green {
+    background: #3AEA1F;
+}
+
+.black {
+    background: #000;
+}
+
+.text-valor-content {
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.valor-title {
+    font-size: 16px;
+}
+
+.explicar {
+    font-size: 14px;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.metodo-section {
+    width: 100%;
+    height: 100vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    padding: 40px;
+}
+
+.title-left {
+    width: 50%;
+    height: 100%;
+}
+
+.title-metodo {
+    font-size: 40px;
+}
+
+.title-metodo u {
+    text-decoration: none;
+    color: #3AEA1F;
+}
+
+.secuencia-pasos {
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid #3AEA1F;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.paso {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.paso::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #3AEA1F;
+    border-radius: 50%;
+    top: 25%;
+    left: -8px;
+    transform: translate(0, -50%);
+}
+
+.paso .paso-num {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #3AEA1F;
+}
+
+.nombre-paso {
+    font-weight: 300;
+}
+
+.nombre-paso u {
+    text-decoration: none;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 1px solid #fff;
+}
+
+
+/* ===========  RESPONSIVE DESIGN  1024PX =================*/
+
+@media (max-width: 1024px) {
+    .contenedor-principal {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caratula-section {
+        height: 15vh;
+    }
+
+    .about-section {
+        height: 40vh;
+    }
+
+    .main-about-text .title {
+        width: 40%;
+        color: #000;
+    }
+
+    .main-about-text .title u {
+        text-decoration: none;
+        color: #3AEA1F;
+    }
+
+    .main-about-text .direccion-content {
+        width: 60%;
+    }
+
+    .valor {
+        height: 90%;
+    }
+
+}
+
+
+/*========================================== RESPONSIVE DESIGN 768px =================================*/
+
+@media (max-width: 768px) {
+    .caratula-section {
+        width: 100%;
+        height: 15vh;
+    }
+
+    .caratula-section .title-about {
+        font-size: 30px;
+    }
+
+    .caratula-section .title-about:hover {
+        -webkit-text-stroke: 1x #fff;
+    }
+
+    .about-section {
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+    }
+
+    .main-about-text {
+        width: 100%;
+        height: 60%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .etiqueta {
+        top: 2%;
+        left: 2%;
+        padding: 5px 10px;
+        gap: 5px;
+        font-size: 14px;
+    }
+
+    .main-about-text .title {
+        width: 100%;
+        margin-top: 30px;
+        font-size: 16px;
+        color: #000;
+    }
+
+    .main-about-text .direccion-content {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        gap: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myv {
+        width: 100%;
+        height: 45%;
+        padding: 5px;
+        color: #000;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.6;
+    }
+
+    .myv u {
+        text-decoration: none;
+        padding: 2px 5px;
+        border-radius: 8px;
+        border: 1px solid #000;
+        font-weight: 600;
+    }
+
+    .valores-content {
+        width: 100%;
+        height: 50%;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .valor {
+        width: 90%;
+        height: 30%;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .svg-content {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .svg-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .text-valor-content {
+        padding: 10px;
+    }
+
+    .valor-title {
+        font-size: 14px;
+    }
+
+    .explicar {
+        font-size: 12px;
+    }
+
+    .metodo-section {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .title-left {
+        width: 100%;
+        height: 30%;
+    }
+
+    .title-metodo {
+        font-size: 35px;
+    }
+
+    .secuencia-pasos {
+        width: 100%;
+        height: 100%;
+        border-left: 1px solid #3AEA1F;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .paso {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .paso::after {
+        top: 13%;
+    }
+
+    .paso .paso-num {
+        font-size: 12px;
+    }
+}
